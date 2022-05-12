@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Golf search</title>
+        <meta name="description" content="ゴルフ場サーチ">
+    
+        <!--Open Graph Protcol-->
+        <!--SNSでシェアした際にタイトルやイメージ画像、詳細などを表示する-->
+        <meta property="og:title" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="#">
+        <meta property="og:image" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:description" content="">
+    
+        <!--携帯で見た時に番号に電話リンクをつけない-->
+        <meta name="format-detection" content="telephone=no">
+    
+        <!--Faviconの設定-->
+        <!-- <link rel="shortcut icon" href="images/favicon.ico">
+    
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css"> -->
+    
+    </head>
+<body>
+    <!-- <h1>Where are you now?</h1>
+    <div id="map"></div> -->
+
+    <h2>Rakuten API Golf</h2>
+    <button type="button" id="kamapub">鎌倉パブリック</button>
+    <p>住所：<span id="kamapubAdress"></span></p>
+    <p>Gsからの所要時間：<span id="kamapubTime"></span></p>
+    <div id="birds" style='width:100%;height:900px;'></div>
+
+</body>
+
+<!-- jQuery&GoogleMapsAPI -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AivcJE2DVrmvB9enKj-Xy1jKbW2BmFeaEv0DNRN6xjSDoPLa32phCfXnmWooxaAG"></script>
+<!-- async deferを取った-->
+
+<!-- /jQuery&GoogleMapsAPI -->
+<script src="js/rakutenapi.js"></script>
+
+</html>
